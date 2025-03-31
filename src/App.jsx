@@ -3,7 +3,7 @@ import "./App.css";
 
 function Home() {
   return (
-    <div  className="home-cls">
+    <div className="home-cls">
       <h2>Lil' Ones</h2>
       <p>Welcome to our website!</p>
     </div>
@@ -12,7 +12,7 @@ function Home() {
 
 function About() {
   return (
-    <div>
+    <div className="content-container">
       <h2>About Page</h2>
       <p>We are a company that values excellence and innovation.</p>
     </div>
@@ -21,7 +21,7 @@ function About() {
 
 function Contact() {
   return (
-    <div>
+    <div className="content-container">
       <h2>Contact Page</h2>
       <p>Email: contact@example.com</p>
       <p>Phone: +1234567890</p>
@@ -51,12 +51,14 @@ function App() {
   return (
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div className="page-container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
