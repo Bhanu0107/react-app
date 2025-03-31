@@ -31,6 +31,15 @@
   font-weight: bold;
   background: salmon;
 }
+.home-cls{
+  background-image: url(/src/assets/BackgroundImg.jpeg);
+  width: 1280px;
+  height: 1200px;
+  background-repeat: no-repeat;
+  color: aqua;
+  font-size: 45px;
+  font-family: fantasy;
+}
 
 @keyframes logo-spin {
   from {
