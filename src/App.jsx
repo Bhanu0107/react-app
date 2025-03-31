@@ -35,7 +35,7 @@ function NotFound() {
 
 function Header() {
   return (
-    <header className="header">
+    <header className="header-postion header">
       <nav className="navbar">
         <ul className="nav-links">
           <li><Link to="/" className="nav-item">Home</Link></li>

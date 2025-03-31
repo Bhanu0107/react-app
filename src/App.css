@@ -3,8 +3,14 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  color: #000;
 }
-
+.header-postion{
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -48,10 +54,9 @@
 .read-the-docs {
   color: #888;
 }.navbar {
-  background-color: #333;
+  background-color: mediumpurple;
   padding: 15px;
   display: flex;
-  justify-content: center;
 }
 
 .nav-links {
@@ -71,4 +76,5 @@
 .nav-item:hover {
   background-color: #555;
   border-radius: 5px;
+  color: #FFF;
 }
